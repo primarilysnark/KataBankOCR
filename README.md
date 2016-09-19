@@ -1,0 +1,8 @@
+# Results
+The primary problem faced in this task is account validation based on OCR'd data.
+
+At the present moment, the given solution is capable of taking in a file containing multiple OCR'd account numbers and writing to output the validity of each account number. If an account number is valid, it will simply print the account number. If an account number is invalid but legible, it will print the account number followed by the text "ERR". If an account number is illegible, it will print the account number followed by the text "ILL".
+
+In the original specifications for the project, the feature set included better error handling by guessing at possible combinations for invalid read input. This was delayed due to sprint time constraints. Additionally, there was some ambiguity surrounding the intended behavior for illegibly read inputs. In one part of the spec, it states that error handling should be performed on invalid inputs. However, in the final notes on the epic, it notes "don't forget to try to work out what a ? should have been". This seems to indicate that illegible inputs should also be properly guessed. Before the next sprint, it would be helpful to clear up that confusion.
+
+Finally, a second requested feature wasn't met this sprint. At the present moment, the program outputs the validated input to a system console rather than a text file. This was done to allow more time to validate the correctness of account validation handling. The feature will be added as a story to the next sprint.
